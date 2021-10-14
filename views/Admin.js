@@ -1,4 +1,4 @@
-import Content from "./content/index.js";
+import Content from "../components/content/index.js";
 
 export default {
   template: `<Content />`,

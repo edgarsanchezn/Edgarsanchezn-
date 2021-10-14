@@ -1,4 +1,3 @@
-import Admin from "./Admin/index.js"
 import NavBar from "./NavBar.js"
 import footerV from "./Footer-v.js";
 
@@ -12,5 +11,5 @@ template: `<div>
 <footerV />
 </div>
 </div>`,
-components:{Admin, NavBar, footerV}
+components:{NavBar, footerV}
 }
