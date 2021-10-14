@@ -1,15 +1,15 @@
-import NavBar from "./NavBar.js"
+import NavBar from "./navbar/index.js"
 import footerV from "./Footer-v.js";
 
 
 export default {
-template: `<div>
+template: `
 <div class="bg-black-alt font-sans leading-normal tracking-normal">
 
 <NavBar />
 <router-view></router-view>
 <footerV />
-</div>
+
 </div>`,
 components:{NavBar, footerV}
 }
