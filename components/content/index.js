@@ -1,4 +1,4 @@
-import Graphs from "./Graphs.js";
+import Graphs from "./Graphs/index.js";
 import Metrics from "./Metrics.js";
 
 export default {
