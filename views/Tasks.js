@@ -5,9 +5,9 @@ export default {
         }
     },
   methods: {
-    ...Vuex.mapMutations({ add: "Tasks/add" }),
-    add_(){
-        this.add(this.newtask)
+    ...Vuex.mapMutations({ add_: "Tasks/add" }),
+    add(){
+        this.add_(this.newtask)
         this.newtask = ""
     }
   },
@@ -18,10 +18,10 @@ export default {
 <div class="px-5">
 <span class="text-2xl">Tasks</span>
 <input v-on:keyup.enter="add" class="mx-5 rounded text-black p-1" type="text" v-model="newtask">
-<button @click="add_" class="bg-gray-700 px-3 hover:bg-blue-500 rounded ">Add</button>
+<button @click="add" class="bg-gray-700 px-3 hover:bg-blue-500 rounded ">Add</button>
 </div>
 <div>
-<div class="mx-10 my-5 border border-white" v-for="item,key in tasks" :key="key">
+<div class="mx-10 p-3 my-5 border border-white" v-for="item,key in tasks" :key="key">
   {{key +  1}}.  {{ item }}
 </div>
 

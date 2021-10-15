@@ -33,7 +33,7 @@ export default {
       links: [
         { to: "/",  title: "Home", icon: "fa-home", color: "blue", active: true,        },
         { to: "/tasks", title: "Tasks", icon: "fa-tasks", color: "pink", active: false,        },
-        { to: "/messages", title: "Messages", icon: "fa-envelope", color: "purple", active: false,        },
+        { to: "/users", title: "Users", icon: "fa-users", color: "purple", active: false,        },
         { to: "/analytics", title: "Analytics", icon: "fa-chart-area", color: "green", active: false,        },
         { to: "/payments", title: "Payments", icon: "fa-wallet", color: "red", active: false,        },
       ],

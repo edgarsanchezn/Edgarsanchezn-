@@ -13,16 +13,19 @@ let Metric = { props: ['info'],
 </div>`}
 
 export default {
-    data() {
-        return {
-            cards: [
-                { title:"Total Revenue", subtitle:"$3249 ", color:"green", icon:"fa-wallet", icon2:"fas fa-caret-up"    },
-                { title:"Total Users", subtitle:"249 ", color:"pink", icon:"fa-users", icon2:"fas fa-exchange-alt"    },
-                { title:"New Users", subtitle:"2 ", color:"yellow", icon:"fa-user-plus", icon2:"fas fa-caret-up"    },
-                { title:"Server Uptime", subtitle:"152 days", color:"blue", icon:"fa-server", icon2:""    },
-                { title:"To Do List", subtitle:"7 tasks", color:"indigo", icon:"fa-tasks", icon2:""    },
-                { title:"Issues", subtitle:"3 ", color:"red", icon:"fa-inbox", icon2:"fas fa-caret-down"    }
-            ]
+
+    computed: {
+        ...Vuex.mapGetters('Tasks', ['TasksCount']),
+        ...Vuex.mapGetters('Users', ['usersCount']),
+        cards (){
+                return [
+                    { title:"Total Revenue", subtitle:"$3249 ", color:"green", icon:"fa-wallet", icon2:"fas fa-caret-up"    },
+                    { title:"Total Users", subtitle: this.usersCount + " ", color:"pink", icon:"fa-users", icon2:"fas fa-exchange-alt"    },
+                    { title:"New Users", subtitle: "2 ", color:"yellow", icon:"fa-user-plus", icon2:"fas fa-caret-up"    },
+                    { title:"Server Uptime", subtitle:"152 days", color:"blue", icon:"fa-server", icon2:""    },
+                    { title:"To Do List", subtitle: this.TasksCount + " tasks", color:"indigo", icon:"fa-tasks", icon2:""    },
+                    { title:"Issues", subtitle:"3 ", color:"red", icon:"fa-inbox", icon2:"fas fa-caret-down"    }
+                ]
         }
     },
     components: { Metric },
