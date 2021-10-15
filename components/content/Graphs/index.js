@@ -1,14 +1,17 @@
 import BarV from "./BarV.js";
 import BarVue from "./BarVue.js";
+import Counter from "./Counter.js";
 import doughnutV from "./doughnutV.js";
 import LineV from "./LineV.js";
 import TableGraph from "./TableGraph.js";
 import TemplateGraph from "./TemplateGraph.js";
 
+Counter
+
 TableGraph
  
 export default {
-  components: { TemplateGraph, BarV, BarVue, LineV, doughnutV, TableGraph },
+  components: { TemplateGraph, BarV, BarVue, LineV, doughnutV, TableGraph, Counter },
   template: ` <div class="flex flex-row flex-wrap flex-grow mt-2">
 
 <TemplateGraph title="Graph Bar 1">
@@ -24,7 +27,9 @@ export default {
     <doughnutV />
 </TemplateGraph>
 
-<TemplateGraph title="Template"  clase="xl:w-1/3" />
+<TemplateGraph title="Template"  clase="xl:w-1/3">
+<Counter />
+</TemplateGraph>
 
 <TableGraph />
 
