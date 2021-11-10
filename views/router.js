@@ -10,8 +10,11 @@ import Users from './Users.js'
 const routes = [
   { path: '/tasks', component: Tasks },
   { path: '/users', component: Users },
+  { path: '/Messages', component: Messages },
   { path: '/payments', component: Payments },
   { path: '/analytics', component: Analytics },
+  { path: '/Admin', component: Admin },
+
   { path: '/', component: Users }
 ]
 

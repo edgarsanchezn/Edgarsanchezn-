@@ -4,10 +4,12 @@ import footerV from "./Footer-v.js";
 
 export default {
     created() {
-        this.getUsers()
+        this.allUsers()
+        this.allTasks()
     },
     methods: {
-        ...Vuex.mapMutations('Users', ['getUsers'])
+        ...Vuex.mapActions({ allTasks: "Tasks/all" }),
+        ...Vuex.mapActions({ allUsers: "Users/all" }),
     },
 template: `
 <div class="bg-black-alt font-sans leading-normal tracking-normal">

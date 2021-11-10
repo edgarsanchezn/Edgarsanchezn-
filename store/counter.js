@@ -1,7 +1,7 @@
- let counter = {
+let counter = {
   namespaced: true,
   state: {
-    count: 545
+    count: 545,
   },
   mutations: {
     increment (state) {
