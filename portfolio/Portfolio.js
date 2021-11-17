@@ -58,7 +58,7 @@ export default {
     </div>
     
     <div class="grid grid-cols-3 gap-4 text-center py-10">
-    <div class="border p-2 rounded">System Admin</div>
+    <a href="/system.html"><div class="border p-2 rounded">System</div></a>
     <div class="border p-2 rounded">Database</div>
     <div class="border p-2 rounded">E-commerce</div>
     </div>
@@ -174,6 +174,7 @@ export default {
     
     </div>
     
+    </div>
     
     </div>`,
 };
