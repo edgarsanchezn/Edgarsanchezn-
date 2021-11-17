@@ -27,15 +27,17 @@ let LiRouter = {
 </router-link>`,
 };
 
+let prefijo = "/system.html"
+
 export default {
   data() {
     return {
       links: [
-        { to: "/",  title: "Home", icon: "fa-home", color: "blue", active: true,        },
-        { to: "/tasks", title: "Tasks", icon: "fa-tasks", color: "pink", active: false,        },
-        { to: "/users", title: "Users", icon: "fa-users", color: "purple", active: false,        },
-        { to: "/analytics", title: "Analytics", icon: "fa-chart-area", color: "green", active: false,        },
-        { to: "/payments", title: "Payments", icon: "fa-wallet", color: "red", active: false,        },
+        { to: prefijo + "/",  title: "Home", icon: "fa-home", color: "blue", active: true,        },
+        { to: prefijo + "/tasks", title: "Tasks", icon: "fa-tasks", color: "pink", active: false,        },
+        { to: prefijo + "/users", title: "Users", icon: "fa-users", color: "purple", active: false,        },
+        { to: prefijo + "/analytics", title: "Analytics", icon: "fa-chart-area", color: "green", active: false,        },
+        { to: prefijo + "/payments", title: "Payments", icon: "fa-wallet", color: "red", active: false,        },
       ],
       menuNav: "hidden"
     };
@@ -51,7 +53,7 @@ export default {
 <div class="w-full container mx-auto flex flex-wrap items-center mt-0 pt-3 pb-3 md:pb-0">
     
   <div class="w-1/2 pl-2 md:pl-0">
-    <a class="text-gray-100 text-base xl:text-xl no-underline hover:no-underline font-bold"  href="#"> 
+    <a class="text-gray-100 text-base xl:text-xl no-underline hover:no-underline font-bold"  href="/system.html"> 
       <i class="fas fa-moon text-blue-400 pr-3"></i> Admin App Dark Mode
     </a>
   </div>

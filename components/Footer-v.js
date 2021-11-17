@@ -1,4 +1,4 @@
-export default {template: `<footer class="bg-gray-900 border-t border-gray-400 shadow">	
+export default {template: `<footer class="bg-gray-900 w-full border-t border-gray-400 shadow absolute bottom-0 left-0">	
 <div class="container max-w-md mx-auto flex py-8">
 
     <div class="w-full mx-auto flex flex-wrap">

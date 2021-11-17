@@ -1,25 +1,24 @@
-import Admin from './Admin.js'
-import Analytics from './Analytics.js'
-import Tasks from './Tasks.js'
-import Messages from './Messages.js'
-import Payments from './Payments.js'
-import Users from './Users.js'
+import Admin from "./Admin.js";
+import Analytics from "./Analytics.js";
+import Tasks from "./Tasks.js";
+import Messages from "./Messages.js";
+import Payments from "./Payments.js";
+import Users from "./Users.js";
 
-
+let prefijo = "/system.html"
 
 const routes = [
-  { path: '/tasks', component: Tasks },
-  { path: '/users', component: Users },
-  { path: '/Messages', component: Messages },
-  { path: '/payments', component: Payments },
-  { path: '/analytics', component: Analytics },
-  { path: '/Admin', component: Admin },
+  { path: prefijo + "/tasks", component: Tasks },
+  { path: prefijo + "/users", component: Users },
+  { path: prefijo + "/Messages", component: Messages },
+  { path: prefijo + "/payments", component: Payments },
+  { path: prefijo + "/analytics", component: Analytics },
+  { path: prefijo + "/Admin", component: Admin },
 
-  { path: '/', component: Users }
-]
-
+  { path: prefijo , component: Analytics },
+];
 
 export default new VueRouter({
-mode: 'history',
-  routes 
-})
+  mode: "history",
+  routes,
+});
