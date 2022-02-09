@@ -1,7 +1,8 @@
-export default {
-  template: `<div class="bg-gray-800 w-screen h-full text-white">
+<template>
+    
+  <div class="bg-gray-800 w-screen h-full text-white">
   <div class="text-right">
-  <div class="px-12 py-6 flex justify-end "><div class="transform rotate-90 text-xl">III</d></div>
+  <div class="px-12 py-6 flex justify-end "><div class="transform rotate-90 text-xl">III</div></div>
   </div>
 
     <div class="flex justify-center p-10 ">
@@ -58,8 +59,10 @@ export default {
     </div>
     
     <div class="grid grid-cols-3 gap-4 text-center py-10">
-    <a href="/system.html"><div class="border p-2 rounded">System</div></a>
-    <div class="border p-2 rounded">Database</div>
+    <router-link to="/system" class="border p-2 rounded">System</router-link>
+    <a href="/database">
+    <div  class="border p-2 rounded">Database</div>
+    </a>
     <div class="border p-2 rounded">E-commerce</div>
     </div>
     </div>
@@ -176,5 +179,10 @@ export default {
     
     </div>
     
-    </div>`,
-};
+    
+</template>
+<script>
+export default {
+    name: "Portfolio"
+}
+</script>
