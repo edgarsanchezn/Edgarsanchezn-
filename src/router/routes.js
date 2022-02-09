@@ -8,6 +8,9 @@ import AppVue from './../views/application'
 export default [
     { path: '/system', component: SystemVue },
     { path: '/application', component: AppVue },
-    { path: '/', component: PortfolioVue }
+    { path: '/', component: PortfolioVue },
+    { path: '*', redirect: "/" },
+
+
 
   ]
