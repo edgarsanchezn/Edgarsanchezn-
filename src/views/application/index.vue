@@ -1,7 +1,7 @@
 <template>
 <div class="flex  border">
 
-<sidebarVue class="w-2/12 h-screen" v-bind:style="{ height: screen, width: '150px' }"/>
+<sidebarVue class="w-2/12 h-screen" v-bind:style="{ height: screen }"/>
 <div class="w-screen" >
 
 
