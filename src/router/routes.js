@@ -16,11 +16,10 @@ import grafics from './../views/application/views/grafics'
 
 export default [
     { path: '/system', component: SystemVue },
-    { path: '/application/', component: AppVue, name: '/application',
+    { path: '/application/', component: AppVue,
     children: [      
       {
-      name: '/application/',
-      path: '/',
+      path: '',
       component: grafics,
     },
       {
