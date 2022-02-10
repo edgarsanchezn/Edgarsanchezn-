@@ -1,17 +1,17 @@
 <template>
-    <div class="border m-4">
+    <div class=" mt-2">
 
 
-        <div class="p-10 flex">
-<card class="w-1/4"/>
-<card class="w-1/4"/>
-<card class="w-1/4"/>
-<card class="w-1/4"/>
+        <div class="p-1 flex">
+<card class="w-1/3"/>
+<card class="w-1/3"/>
+<card class="w-1/3"/>
 
 
 
 
         </div>
+    <router-view></router-view>
     </div>
 </template>
 <script>

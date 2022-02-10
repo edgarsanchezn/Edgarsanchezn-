@@ -1,7 +1,7 @@
 <template>
-    <div class="border p-4">
+    <div class=" p-4">
 
-        <div class="p-2 bg-gray-100 border grid grid-cols-2">
+        <div class="p-2 bg-gray-100  grid grid-cols-2">
             <div>
             Dashboard
 

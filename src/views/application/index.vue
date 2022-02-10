@@ -19,6 +19,9 @@ import contentBodyVue from './content-body/'
 
 export default {
     components: {sidebarVue, navbarVue, contentBodyVue},
+    created(){
+        console.log(this.$route)
+    },
 computed:{
     screen(){
 return (window.screen.height / 100 * 87.5) + 'px'
