@@ -24,7 +24,7 @@ export default {
     },
 computed:{
     screen(){
-return (window.screen.height / 100 * 87.5) + 'px'
+return (window.screen.height / 100 * 84) + 'px'
     }   
 
 }

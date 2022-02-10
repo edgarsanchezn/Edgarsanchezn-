@@ -5,6 +5,8 @@ import AppVue from './../views/application'
 import users from './../views/application/views/users'
 import products from './../views/application/views/products'
 import clients from './../views/application/views/clients'
+import grafics from './../views/application/views/grafics'
+
 
 
 
@@ -15,7 +17,12 @@ import clients from './../views/application/views/clients'
 export default [
     { path: '/system', component: SystemVue },
     { path: '/application/', component: AppVue, name: '/application',
-    children: [
+    children: [      
+      {
+      name: '/application/',
+      path: '/',
+      component: grafics,
+    },
       {
         name: '/application/users',
         path: 'users',
