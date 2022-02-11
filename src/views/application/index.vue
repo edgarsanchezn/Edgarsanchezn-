@@ -1,7 +1,7 @@
 <template>
-<div class="flex  border">
+<div class="flex border">
 
-<sidebarVue class="w-2/12 h-screen" v-bind:style="{ height: screen }"/>
+<sidebarVue class="w-2/12 h-screen" v-bind:style="styles" />
 <div class="w-screen" >
 
 
@@ -20,11 +20,13 @@ import contentBodyVue from './content-body/'
 export default {
     components: {sidebarVue, navbarVue, contentBodyVue},
     created(){
-        console.log(this.$route)
+        
     },
 computed:{
-    screen(){
-return (window.screen.height / 100 * 84) + 'px'
+    styles(){
+return {
+    height: (window.screen.height / 100 * 84) + 'px'
+} 
     }   
 
 }
