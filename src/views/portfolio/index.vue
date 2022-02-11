@@ -3,7 +3,7 @@
     <div class="">
       <navbarVue />
 
-      <div class="flex justify-center p-10">
+      <div class="flex justify-center p-4 md:p-10">
         <div class="p-8 rounded-3xl bg-gray-900 shadow-2xl">
           <div class="w-20 h-20 rounded-full bg-gray-100 mx-auto mb-4"></div>
           <div class="font-bold text-center my-1">Edgar Sanchez</div>
@@ -98,7 +98,7 @@
             <i class="fab fa-git-alt"></i>
           </div>
 
-          <div class="mx-20 text-center p-10">
+          <div class="mx-10 text-center py-10">
             <div>Proyectos / Portafolio</div>
 
             <div class="grid grid-cols-3 gap-4 text-center py-10">

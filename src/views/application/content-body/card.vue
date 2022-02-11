@@ -1,6 +1,6 @@
 <template lang="">
-<div class="relative px-2 py-5">
-    <div class="border px-4 py-4 rounded-xl shadow-xl ">
+<div class="relative px-2 py-5 ">
+    <div class="border px-4 py-4 rounded-xl shadow-xl bg-gray-100">
         <div>{{text}}</div>
         <div class="font-bold text-2xl">$53k</div>
 

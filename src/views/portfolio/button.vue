@@ -1,5 +1,5 @@
 <template lang="">
-            <router-link :to="'/' + to" class="text-xs  md:text-base border p-1 md:p-2 rounded flex justify-center justify-items-center"
+            <router-link :to="'/' + to" class="text-xs  md:text-base border px-8 py-2 md:px-2 rounded flex justify-center justify-items-center"
               >{{title}}</router-link
             >
 </template>

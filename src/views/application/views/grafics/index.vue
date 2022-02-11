@@ -3,9 +3,9 @@
         <div>Grafics</div>
         <div class="flex">
 
-        <lineChartVue />
-        <lineChartVue />
-        <lineChartVue />
+        <lineChartVue class="invisible md:visible" />
+        <lineChartVue class="invisible md:visible" />
+        <lineChartVue class="invisible md:visible" />
 
 
         </div>
