@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-2">
-    <div class="p-1 flex">
+  <div class="mt-2 w-full">
+    <div class="flex flex-row mr-4 md:m-4">
       <card class="w-1/3" text="Users">
         <svg
           xmlns="http://www.w3.org/2000/svg"

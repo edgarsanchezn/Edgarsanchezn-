@@ -2,7 +2,7 @@
   <div class="p-4">
     <div class="p-2 bg-gray-100 grid grid-cols-2">
       <div class="flex space-x-3">
-        <svg
+        <svg @click="MenuToggle"
           xmlns="http://www.w3.org/2000/svg"
           class="h-6 w-6"
           fill="none"
@@ -80,5 +80,10 @@
 <script>
 export default {
   name: "navbar",
+  methods:{
+    MenuToggle(){
+      this.$emit("MenuToggle")
+    }
+  }
 };
 </script>

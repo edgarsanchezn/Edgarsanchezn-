@@ -1,6 +1,14 @@
 <template>
-  <div class="bg-gray-700 rounded-xl text-white m-4 py-2 ">
-    <div class="px-5 py-3 flex">
+  <div
+    class="
+      bg-gray-700
+      rounded-xl
+      text-white
+      text-xs
+      md:text-base
+    "
+  >
+    <div class="px-3 md:px-5 py-3 flex content-center">
       <i>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -17,10 +25,10 @@
           />
         </svg>
       </i>
-      <div class="px-4">System App</div>
+      <div class="px-4 self-center">System App</div>
     </div>
     <hr class="my-2" />
-
+<div>
     <buttonVue title="Dashboard" to="/application" />
     <buttonVue title="Users" to="/application/users">
       <svg
@@ -71,6 +79,7 @@
       </svg>
     </buttonVue>
   </div>
+</div>
 </template>
 <script>
 import buttonVue from "./button.vue";
